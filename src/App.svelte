@@ -1,11 +1,8 @@
 <script>
-	export let name;
+import Heatmap from './Heatmap.svelte';
 </script>
-
 <style>
-	h1 {
-		color: purple;
-	}
+
 </style>
 
-<h1>Hello {name}!</h1>
+<Heatmap/>

@@ -1,26 +1,12 @@
 <script>
   import { scaleQuantile } from "d3-scale";
   import { max } from "d3-array";
-  import * as d3 from "d3";
 
   import data from "./heatmapdata.js";
 
   const gridSize = {width:32, height:32};
 
-  const reformat = d3
-    .nest()
-    .key(d => {
-      return d.hour;
-    })
-    .key(d => {
-      return d.day;
-    })
-    .rollup(v => {
-      return {
-        value: v[0].value
-      };
-    })
-    .object(data);
+
 
   let width;
   let height;
