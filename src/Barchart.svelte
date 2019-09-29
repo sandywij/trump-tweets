@@ -64,7 +64,7 @@ const padding = { top: 20, right: 40, bottom: 40, left: 20 };
               height={yScale(d)}
               y={height- padding.bottom - yScale(d)}
               x={barWidth * i}
-              fill="#55acee" />
+              fill="#00a6ff" />
 
 
           <text
