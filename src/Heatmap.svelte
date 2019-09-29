@@ -90,6 +90,9 @@
     font-size: 10px;
   }
 
+svg {
+  padding: 1em 0em;
+}
 
 
 
@@ -102,7 +105,7 @@
 
 
 <div id="heatmap">
- <svg width={legendElementWidth * scale.length} height={gridSize*1.5}>
+ <svg width={legendElementWidth * scale.length} height={36}>
       {#each scale as q, i}
         <g transform="translate({legendElementWidth * i}, 0)">
           <rect
