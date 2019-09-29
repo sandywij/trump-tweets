@@ -1,9 +1,11 @@
 <script>
   import Heatmap from "./Heatmap.svelte";
   import Barchart from "./Barchart.svelte";
+  import CircleMap from "./CircleMap.svelte";
 </script>
 
 <style>
+
   header {
     width: 100%;
     overflow: hidden;
@@ -11,17 +13,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(circle, #0d49a1, #075fb9, #0076d1, #008ee8, #00a6ff);
+    background-image: radial-gradient(
+      circle,
+      #0d49a1,
+      #075fb9,
+      #0076d1,
+      #008ee8,
+      #00a6ff
+    );
     color: white;
     height: 70vh;
-
   }
 
-.lead {
+  .lead {
     font-size: 1.25rem;
     font-weight: 300;
-
-}
+  }
   .content {
     max-width: 850px;
     width: 100%;
@@ -37,17 +44,27 @@
   img {
     max-width: 100%;
     max-height: 100%;
-}
+  }
+
 </style>
 
 <header>
-    <h1 style="font-size: 2rem;;">Year in President Trump's Tweets</h1>
-    <p class="lead">As President, @realDonaldTrump has tweeted <u><b>2284*</b></u> times in 2017. </p>
-    <p>*last updated December 11, 2017</p>
+  <h1 style="font-size: 2rem;;">Year in President Trump's Tweets</h1>
+  <p class="lead">
+    As President, @realDonaldTrump has tweeted
+    <u>
+      <b>2284*</b>
+    </u>
+    times in 2017.
+  </p>
+  <p>*last updated December 11, 2017</p>
 
 </header>
 <section>
-  <h2 class="content">When does Trump tweet?</h2>
+  <div class="content">
+    <h2>When does Trump tweet?</h2>
+    <p>Looking at all his tweets, it looks like he hardly tweets at 2pm</p>
+  </div>
   <Heatmap />
 </section>
 
@@ -69,8 +86,26 @@
   </div>
 </section>
 
+<section class="content" id="retweeting">
+  <h2>Retweeting</h2>
+  <p class="lead">Who was @realDonaldTrump retweeting this year?</p>
+
+  <p>
+    @realDonaldTrump retweeted
+    <b>284</b>
+    tweets this year.
+  </p>
+  <p>
+    @realDonaldTrump retweeted @foxandfriends
+    <b>46</b>
+    times.
+  </p>
+  <CircleMap />
+
+</section>
+
 <section class="content">
-  <div class="container text-center">
+  <div class="text-center">
     <div class="row">
       <div class="col">
 
