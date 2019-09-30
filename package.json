@@ -14,6 +14,7 @@
   "dependencies": {
     "d3-array": "^2.3.1",
     "d3-scale": "^3.1.0",
+    "gh-pages": "^2.1.1",
     "sirv-cli": "^0.4.4"
   },
   "scripts": {
@@ -21,6 +22,8 @@
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --single",
-    "start:dev": "sirv public --single --dev"
+    "start:dev": "sirv public --single --dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   }
 }
