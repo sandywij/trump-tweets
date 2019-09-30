@@ -1,71 +1,16 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# A Year of Trump Tweets
+## [Demo Link](https://sandywij.github.io/trump-tweets/)
 
----
+## Project Procedure:
+### Data Collection/Processing
+I've been using a [Twitter Archiver](https://ctrlq.org/) add-on to collect twitter data by @realDonaldTrump since Jan 20, 2017. The data was collected in a google sheet.
+Using excel, I was able to analyze the data and found interesting nuggets that form a story.
 
-# svelte app
+![Excel](https://i.imgur.com/WcuGnQU.png)
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+### Tests
+[First Test](http://bl.ocks.org/sandywij/4c35caf41e54a1a888de2dca6a109b28)
+![First Test](https://imgur.com/t0IGsxj.png)
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
-```
-
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
+[Second Test](http://bl.ocks.org/sandywij/a7fcdcd1c25bb0cdaa7987acd1b5708f)
+![Second Test](https://i.imgur.com/4JOJP4D.png)
